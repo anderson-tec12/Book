@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Template</title>
+	<!-- Javascript -->
+    <script src="js/modernizr.2.6.2.min.js"></script>
+    <!-- <link rel="stylesheet" href="http://codepen.io/assets/libs/fullpage/jquery-ui.css"> -->
+
+    
+
+    <!-- Bootstrap -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/icon-fonts.css" rel="stylesheet">
+    <link href="fonts/styletype.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/pen.css" rel="stylesheet">
+
+</head>
+<body>
+	 <header id="header-sistem">
+      <div class="container content">
+        <div class="row">
+          <div class="col-xs-3">
+            <img src="images/logo_possivel_acordo.png" alt="Possível Acordo Logotipo">
+          </div>
+          <div class="col-xs-6">
+            <h1 class="header-title">Templates</h1>
+          </div>
+          <div class="col-xs-3 menu-top">
+            <ul class="list-inline">
+              <li class="menu-top-item">ubirajaracpelli@gmail.com - localhost</li>
+              <li class="menu-top-item"><a href='/sistema2/sair.php'>Sair</a></li>
+            </ul>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="form-group pull-right"> 
+                  	<select class="form-control" name="selModulo" id="selModulo" title="Mudar para outro sistema" onchange="mudaModulo(this.value)">
+				            <option value="ModAdmin"  selected  >Administração</option>
+		
+		  			         <option value="survay"  >Chave Dicotomica</option>
+		
+		  			<option value="ticket"  >Tickets</option>
+		
+		  	</select>
+	                </div> 
+              </div><!-- End Col 11 -->
+            </div><!-- End Row -->
+          </div><!-- End Col -->
+        </div><!-- End Row -->
+      </div><!-- End Container -->
+    </header><!-- End Header -->
+
+    <nav id="menu-sistem">
+      <div class="container-fluid content">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="menu">
+              <li class='menu-item'>
+				<a class='action' data-placement='bottom' data-toggle='tooltip' data-original-title='Cadastro de Usuários'  
+						 ' class="current_icone_topo" ' href='index.php?mod=listar&pag=usuario'>
+							<span class='icon icon-insert-user'></span>
+						</a></li><li class='menu-item'>
+				<a class='action' data-placement='bottom' data-toggle='tooltip' data-original-title='Templates de E-mail'  
+						 '' href='index.php?mod=listar&pag=convite_template'>
+							<span class='icon icon-insert-template'></span>
+						</a></li><li class='menu-item'>
+				<a class='action' data-placement='bottom' data-toggle='tooltip' data-original-title='Convite de E-mail'  
+						 '' href='index.php?mod=listar&pag=cadastro_basico&tipo=3'>
+							<span class='icon icon-insert-drawer'></span>
+						</a></li>            </ul>
+          </div><!-- End Col -->
+        </div><!-- End Row -->
+      </div><!-- End Container -->
+    </nav><!-- End Nav -->
+
+    <div class="container-fluid content">      
+      <form method="post" name="frm" action="">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Templates</h1>
+            <div class="panel panel-default">
+              <div class="panel-heading">Panel heading without title</div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-xs-3">
+
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="form-group">
+                          <label for="nome">Nome</label>
+                          <input type="text" name="nome" class="form-control" placeholder="Nome">
+                        </div>
+                      </div>
+                    </div><!-- End Row -->
+                    
+                    <div class="row">
+                      <div class="col-xs-6">
+                      <div class="form-group">
+                        <label for="icon" class="sr-only">Icone</label>
+                        <select name="icon" id="" class="form-control">
+                          <option value="">Icon 1</option>
+                          <option value="">Icon 2</option>
+                          <option value="">Icon 3</option>
+                        </select>
+                      </div>
+                      </div><!-- End Col 6 -->
+
+                      <div class="col-xs-6">
+                      <div class="form-group">
+                        <label for="icon" class="sr-only">Icone</label>
+                        <select name="icon" id="" class="form-control">
+                          <option value="">Icon 1</option>
+                          <option value="">Icon 2</option>
+                          <option value="">Icon 3</option>
+                        </select>
+                      </div>
+                      </div><!-- End Col 6 -->
+                    </div><!-- End Row -->
+
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <button type="button" class="btn btn-primary btn-block">Salvar</button>
+                      </div><!-- End Col 12 -->
+                    </div><!-- End Row -->
+
+                  </div><!-- End Col 3 -->
+
+                  <div class="col-xs-3">
+                    <label for="descricao">Descrição</label>
+                    <textarea name="descricao" rows="5" class="form-control"></textarea>
+                  </div>
+                  <div class="col-xs-4">
+                    <label for="instrucoes">Instruções de Uso</label>
+                    <textarea name="instrucoes" rows="5" class="form-control"></textarea>
+                  </div>
+                  <div class="col-xs-2">
+                    <label for="modulos">Módulos</label>
+                    <select multiple class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+              </div><!-- End Panel Body -->
+            </div><!-- End Panel -->
+          </div>
+        </div><!-- End Row -->
+        <!-- Painel Principal -->
+        <div class="row">
+          <div class="col-xs-3">
+            <div class="panel panel-default">
+              <div class="panel-heading">Panel heading without title</div>
+              <div class="panel-body">
+                <div class="drag-container">
+                  <div class="drag">
+                   1
+                  </div>
+                  <div class="drag">2</div>
+                  <div class="drag">3</div>
+                </div> <!-- .drag-container -->
+              </div>
+            </div>
+          </div><!-- End Col 4 -->
+          <div class="col-xs-9">
+            <div class="panel panel-default">
+              <div class="panel-heading">Panel heading without title</div>
+              <div class="panel-body">
+                <div class="drop-container">
+                  <p>Arraste números aqui</p>
+                </div>
+                <br>
+                <div class="lixeira">
+                  Arraste aqui para apagar
+                </div> <!-- .lixeira -->
+                <button class="salvar">Salvar</button>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          
+          
+        </div><!-- End Col 8 -->
+        <!-- Miolo -->
+      </form>
+    </div><!-- End Container -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js"></script>
+    <!--script src="js/jquery_and_jqueryui.js"></script-->
+    <script src="js/drag_and_drop.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

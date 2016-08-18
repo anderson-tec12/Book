@@ -1,0 +1,190 @@
+ *, *:before, :after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+/* Drag e Drop system */
+.drag-container, 
+.drop-container {
+    width: 100%;
+    background: rgb(255,255,255);
+    font-size: 0;
+    /*text-align: center;*/
+    float: left;
+    color: #fff;
+    min-height: 378px;
+    
+}
+.drag, 
+.placeholder {
+    font-size: 12px;
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    background: rgb(245,245,245);
+    margin: 10px auto;
+    border:none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow:1px 1px 2px rgb(125,125,125);
+    -webkit-box-shadow:1px 1px 2px rgb(125,125,125);
+    box-shadow:1px 1px 2px rgb(125,125,125);
+}
+.drag{
+    cursor: move;
+}
+.drag-img{
+    width: 48px;
+    height: 48px;
+    display: inline;
+}
+.drag-span{
+    display: inline;
+    width: 115px;
+    line-height: 1em;
+    color: rgb(51,51,51);
+    float: left;
+    padding-top: 10px;
+    /*width: 28px;
+    display: inline-block;
+    color: rgb(0,0,0);
+    cursor: move;
+    font-size: 25px;
+    padding-left: 7px;
+    padding-right: 7px;*/
+}
+
+.icon-drag{
+    /*display: inline-block;*/
+    float: left;
+    margin-right: 5px;
+}
+.drop-saved {
+    font-size: 12px;
+    width: 100%;
+    min-height: 75px;
+    line-height: 50px;
+    background: rgb(245,245,245);
+    margin: 10px auto;
+    border:none;
+    cursor: move;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow:1px 1px 2px rgb(125,125,125);
+    -webkit-box-shadow:1px 1px 2px rgb(125,125,125);
+    box-shadow:1px 1px 2px rgb(125,125,125);
+}
+.drop-saved-img,
+.drop-saved-item,
+.drop-saved-order{
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+.drop-saved-img{
+    float: left; 
+    margin-top:10px
+}
+.drop-saved-item{
+    width: 87%;
+    margin-top: 2px;
+    color: rgb(51,51,51);
+    float: left;
+    height: 69px;
+}
+.drop-saved-order{
+    width: 2%;
+    color: rgb(204,204,204);
+    cursor: move;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 26px;
+    float: right;
+    margin-right: 2%;
+}
+
+.drop-container {
+    background: rgb(255,255,255);
+}
+.drop-container p {
+    height: 30px;
+    float: left;
+    font-size: 18px;
+    line-height: 190px;
+    color: rgb(245,245,245);
+}
+
+.drop-container .ui-draggable{
+    font-size: 12px;
+    width: 100%;
+    height: auto;
+    min-height: 75px;
+    line-height: 50px;
+    background: rgb(245,245,245);
+    margin: 10px auto;
+    border:none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow:1px 1px 2px rgb(125,125,125);
+    -webkit-box-shadow:1px 1px 2px rgb(125,125,125);
+    box-shadow:1px 1px 2px rgb(125,125,125);
+
+}
+
+
+.lbl_check{
+    color: rgb(51,51,51);
+    font-size: 14px;
+    float: left;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 18px;
+    line-height: 1.4em;
+
+}
+.drop-img{
+    width: 87%;
+    margin-top: 16px;
+    float: left;
+}
+
+.placeholder {
+    background: none;
+    border: 2px dotted #eee;
+}
+.lixeira {
+    height: 50px;
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+    background: rgb(245,245,245);
+    border: 2px dotted #999;
+    text-align: center;
+    line-height: 50px;
+    color: #999;
+    font-weight: 700;
+    font-size: 18px;
+}
+.lixeira-ativa {
+    border: 2px dotted red;  
+}
+
+.input-size-mini{
+    width: 40px;
+}

@@ -1,0 +1,275 @@
+[25-Sep-2014 02:35:19 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;pk_convite_chamado&quot; already exists in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[25-Sep-2014 02:36:36 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  role &quot;possivelacordo_site&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[25-Sep-2014 02:40:34 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;ix_id_usuario&quot; already exists in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[07-Oct-2014 01:48:26 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  role &quot;possivelacordo_site&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[07-Oct-2014 02:13:25 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;convite&quot; does not exist
+LINE 1: select * from convite
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[21-Oct-2014 03:20:40 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  role &quot;possivelacordo_site&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Nov-2014 20:03:37 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;SCHEMA&quot;
+LINE 1: SCHEMA custom
+        ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Nov-2014 20:03:59 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;AUTHORIZATION&quot;
+LINE 2:   AUTHORIZATION possivel_acordouser
+          ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Nov-2014 20:04:58 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;ALL&quot;
+LINE 2: GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA custom TO possivel_...
+                         ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Nov-2014 20:06:00 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;ALL&quot;
+LINE 1: GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA custom TO possi...
+                                ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[21-Nov-2014 18:58:14 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;componentes&quot; does not exist
+LINE 1: select * from componentes
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[26-Nov-2014 11:38:36 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  permission denied for relation relato in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:03:18 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  table &quot;componente_relato&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:05:49 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  table &quot;componente_relato&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:05:52 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  table &quot;componente_relato&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:06:11 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  cannot drop table relato_componente because other objects depend on it
+DETAIL:  constraint pre_analise_id_relato_componente_fkey on table pre_analise depends on table relato_componente
+HINT:  Use DROP ... CASCADE to drop the dependent objects too. in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:07:38 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  cannot drop table relato_componente because other objects depend on it
+DETAIL:  constraint pre_analise_id_relato_componente_fkey on table pre_analise depends on table relato_componente
+HINT:  Use DROP ... CASCADE to drop the dependent objects too. in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:07:46 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  cannot drop table relato_componente because other objects depend on it
+DETAIL:  constraint pre_analise_id_relato_componente_fkey on table pre_analise depends on table relato_componente
+HINT:  Use DROP ... CASCADE to drop the dependent objects too. in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:08:06 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;DROP&quot;
+LINE 3: DROP TABLE public.relato_componente;
+        ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:09:15 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;componente_template&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:11:02 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column &quot;id_componente_template&quot; referenced in foreign key constraint does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:11:44 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;COLUMN&quot;
+LINE 5: ALTER TABLE &quot;public&quot;.&quot;pre_analise&quot; COLUMN &quot;id_componente_tem...
+                                           ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 11:12:28 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 5: ... &quot;public&quot;.&quot;pre_analise&quot; ADD COLUMN &quot;id_componente_template&quot;;
+                                                                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 13:08:09 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;BACKUP&quot;
+LINE 1: BACKUP DATABASE public;
+        ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 21:23:21 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;public.pre_analise_relato&quot; does not exist
+LINE 1: select pa.*, ct.* from public.pre_analise_relato pa left joi...
+                               ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 21:23:49 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;public.pre_analise_relato&quot; does not exist
+LINE 1: select pa.*, ct.* from public.pre_analise_relato pa left joi...
+                               ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 21:24:11 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;public.pre_analise_relato&quot; does not exist
+LINE 1: select * from public.pre_analise_relato pa left join custom....
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 21:24:50 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;AND&quot;
+LINE 1: select * from public.pre_analise_relato pa AND custom.compon...
+                                                   ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 21:32:54 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;public.pre_analise_relato&quot; does not exist
+LINE 1: SELECT pa.*, ct.* FROM public.pre_analise_relato,custom.comp...
+                               ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[28-Nov-2014 21:33:40 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;ct&quot;
+LINE 1: ...re_analise_relato pa ,custom.componente _template ct WHERE p...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[29-Nov-2014 01:03:28 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;where&quot;
+LINE 1: ...nalise pa left join custom.componente_template ct where ct.i...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[29-Nov-2014 01:09:39 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;orderby&quot;
+LINE 1: ...plate where pa.id_relato = 1 and status = 'salvo' orderby or...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[29-Nov-2014 01:10:14 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;orderby&quot;
+LINE 1: ...plate where pa.id_relato = 1 and status = &quot;salvo&quot; orderby or...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[29-Nov-2014 01:11:02 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column &quot;salvo&quot; does not exist
+LINE 1: ...e_template where pa.id_relato = 1 and pa.status = &quot;salvo&quot; or...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[04-Dec-2014 20:11:45 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column &quot;start&quot; of relation &quot;pre_analise&quot; already exists in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[04-Dec-2014 20:12:02 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column &quot;size&quot; of relation &quot;pre_analise&quot; already exists in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 11:35:38 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;componente_template&quot; does not exist
+LINE 1: Select * from componente_template;
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 11:37:15 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;componente_template&quot; does not exist
+LINE 1: Select * from componente_template;
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 15:41:10 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 1: ...public.pre_analise pa  left join custom.componente_template;
+                                                                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 15:41:43 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at end of input
+LINE 1: ... public.pre_analise pa  left join custom.componente_template
+                                                                       ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 15:43:57 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at end of input
+LINE 1: ...blic.pre_analise pa left join custom.componente_template ct 
+                                                                       ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 15:44:28 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at end of input
+LINE 1: ...lic.pre_analise pa inner join custom.componente_template ct 
+                                                                       ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 15:47:15 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at end of input
+LINE 1: ... custom.componente_template inner join public.pre_analise pa
+                                                                       ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 15:47:50 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 1: ...tom.componente_template ct inner join public.pre_analise pa;
+                                                                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 15:48:08 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at end of input
+LINE 1: ...stom.componente_template ct inner join public.pre_analise pa
+                                                                       ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 15:48:37 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at end of input
+LINE 1: ...ustom.componente_template ct left join public.pre_analise pa
+                                                                       ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 15:50:03 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column &quot;pa_id_componente_template&quot; does not exist
+LINE 1: ...ate ct left join public.pre_analise pa  ON ct.id= pa_id_comp...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 16:21:56 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column &quot;0 478, 482, 483&quot; does not exist
+LINE 4: ...        where pa.id_relato = 1 and pa.id not in ( &quot;0 478, 48...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 16:24:31 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column &quot;478, 482, 483&quot; does not exist
+LINE 4: ...        where pa.id_relato = 1 and pa.id not in ( &quot;478, 482,...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[10-Dec-2014 16:25:34 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;478, 482, 483&quot;
+LINE 4: ...         where pa.id_relato = 1 and pa.id not in ('478, 482,...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 21:15:09 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;custom&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:09:23 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  database &quot;custom&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:09:53 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  database &quot;custom&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:11:07 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;custom&quot;
+LINE 1: ALTER custom OWNER TO possivel_acordouser;
+              ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:14:02 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  database &quot;custom&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:30:36 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ALTER DATABASE possivel_acordosite.custom OWNER TO possivela...
+                                          ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:37:59 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  database &quot;custom&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:38:23 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  database &quot;custom&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:39:04 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be owner of database possivel_acordosite in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:39:31 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be owner of database possivel_acordosite in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:39:52 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ALTER DATABASE possivel_acordosite.custom OWNER TO possivel_...
+                                          ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 22:40:22 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  database &quot;custom&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 23:05:20 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;custom&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 23:05:54 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ALTER DATABASE possivel_acordosite.custom OWNER TO possivel_...
+                                          ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Dec-2014 23:07:31 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  permission denied for schema custom in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 17:34:00 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be member of role &quot;possivel&quot; in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 17:35:01 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;AUTHORIZATION&quot;
+LINE 1: ALTER SCHEMA custom AUTHORIZATION TO possivel
+                            ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 17:35:21 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;AUTHORIZATION&quot;
+LINE 1: ALTER SCHEMA custom AUTHORIZATION TO postgres
+                            ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 17:35:35 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be member of role &quot;postgres&quot; in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 20:15:54 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be member of role &quot;possivel_usersite&quot; in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 20:17:49 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be member of role &quot;possivel&quot; in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 20:19:50 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be member of role &quot;postgres&quot; in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 20:20:20 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be member of role &quot;postgres&quot; in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 20:20:46 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be member of role &quot;postgres&quot; in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[17-Dec-2014 20:58:01 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  must be owner of relation tipo_item_newsletter in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Dec-2014 10:41:55 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;tipo_item_newsletter&quot; does not exist
+LINE 1: select * from tipo_item_newsletter p where 1 = 1
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Dec-2014 10:42:29 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;tipo_item_newsletter&quot; does not exist
+LINE 1: select * from tipo_item_newsletter t;
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Dec-2014 10:43:23 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;tipo_item_newsletter&quot; does not exist
+LINE 1: select * from tipo_item_newsletter;
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Dec-2014 10:44:30 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;tipo_item_newsletter&quot; does not exist
+LINE 1: select * from tipo_item_newsletter;
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Dec-2014 10:51:15 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;tipo_item_newsletter&quot; does not exist
+LINE 1:  select * from tipo_item_newsletter
+                       ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[18-Dec-2014 21:12:52 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column &quot;id_tipo_template_newsletter&quot; of relation &quot;item_template_newsletter&quot; does not exist
+LINE 1: ...e_newsletter ( &quot;ordem&quot; ,&quot;id_template_newsletter&quot; ,&quot;id_tipo_t...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 00:18:30 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;item_template_newsletter&quot; does not exist
+LINE 1: Select * from item_template_newsletter where id_template_new...
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 10:46:11 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;custom.tipo_item_sortable&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 10:47:09 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 2: INSERT INTO custom.tipo_item_newsletter;(codigo, nome) value...
+                                               ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 10:48:32 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 2: INSERT INTO custom.tipo_item_newsletter;('codigo', 'nome') v...
+                                               ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 10:50:35 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table &quot;item_template_newsletter&quot; references &quot;tipo_item_newsletter&quot;.
+HINT:  Truncate table &quot;item_template_newsletter&quot; at the same time, or use TRUNCATE ... CASCADE. in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 10:51:21 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;TABLE&quot;
+LINE 2: TRUNCATE TABLE custom.tipo_item_newsletter,
+                 ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 10:52:29 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 5: INSERT INTO custom.tipo_item_newsletter;('codigo', 'nome') v...
+                                               ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 10:53:34 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table &quot;item_template_newsletter&quot; references &quot;tipo_item_newsletter&quot;.
+HINT:  Truncate table &quot;item_template_newsletter&quot; at the same time, or use TRUNCATE ... CASCADE. in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 10:56:50 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 1: INSERT INTO custom.tipo_item_newsletter;('codigo', 'nome') v...
+                                               ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 10:57:25 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;'codigo'&quot;
+LINE 1: INSERT INTO custom.tipo_item_newsletter('codigo', 'nome') va...
+                                                ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 11:59:28 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;t&quot;
+LINE 1: Select t.codigo, i.* from custom.item_template_newsletter i ...
+               ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[19-Dec-2014 12:01:43 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;i&quot;
+LINE 1: ...left join custom.tipo_item_newsletter t on t.id = i.id_tipo_...
+                                                             ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[21-Dec-2014 01:30:10 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;ALTER&quot;
+LINE 10: ALTER TABLE public.icone OWNER TO possivel_acordouser;
+         ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 10:52:04 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;item_template_newsletter&quot; does not exist
+LINE 1: Select * from item_template_newsletter;
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 12:44:40 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;custom.component_template&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 12:46:06 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  database &quot;custom&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 12:46:52 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;custom&quot;
+LINE 1: ALTER DATABASE possivel_acordosite custom OWNER TO possivel_...
+                                           ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 12:48:35 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;'possivel_acordosite.custom'&quot;
+LINE 1: ALTER DATABASE 'possivel_acordosite.custom' OWNER TO possive...
+                       ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 12:48:55 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ALTER DATABASE possivel_acordosite.custom OWNER TO possivel_...
+                                          ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 14:10:50 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ALTER DATABASE possivel_acordosite.public OWNER TO possivel_...
+                                          ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 14:14:22 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ALTER DATABASE possivel_acordosite.public OWNER TO possivel_...
+                                          ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 14:21:32 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: FATAL:  password authentication failed for user &quot;postgres&quot; in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 55
+[22-Dec-2014 14:21:32 UTC] PHP Warning:  pg_query() expects parameter 1 to be resource, boolean given in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 59
+[22-Dec-2014 14:21:32 UTC] PHP Warning:  pg_exec() expects parameter 1 to be resource, boolean given in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 66
+[22-Dec-2014 14:21:32 UTC] PHP Warning:  pg_set_client_encoding() expects parameter 1 to be resource, boolean given in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 70
+[22-Dec-2014 14:22:02 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ALTER DATABASE possivel_acordosite.public OWNER TO possivel_...
+                                          ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[22-Dec-2014 14:22:12 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;.&quot;
+LINE 1: ALTER DATABASE possivel_acordosite.public OWNER TO possivel_...
+                                          ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[23-Dec-2014 19:22:28 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  insert or update on table &quot;componente_template&quot; violates foreign key constraint &quot;componente_template_id_ferramenta_fkey&quot;
+DETAIL:  Key (id_ferramenta)=(1) is not present in table &quot;ferramenta&quot;. in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[23-Dec-2014 19:23:27 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  insert or update on table &quot;componente_template&quot; violates foreign key constraint &quot;componente_template_id_ferramenta_fkey&quot;
+DETAIL:  Key (id_ferramenta)=(1) is not present in table &quot;ferramenta&quot;. in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[23-Dec-2014 19:32:22 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;componente_template&quot; does not exist
+LINE 2: INSERT INTO componente_template VALUES (8, 'Penalidades, mul...
+                    ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[30-Dec-2014 10:54:25 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;GRANT&quot;
+LINE 24: GRANT ALL PRIVILEGES ON public.item_newsletter TO &quot;possivel&quot;
+         ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[30-Dec-2014 12:25:09 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;item_template_newsletter&quot; does not exist
+LINE 1: select * from item_template_newsletter;
+                      ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[05-Jan-2015 17:52:35 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation &quot;profissional&quot; does not exist in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[07-Jan-2015 17:22:35 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;custom&quot;
+LINE 1: Select * custom.tipo_item_template_newsletter 
+                 ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[07-Jan-2015 17:22:57 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;custom&quot;
+LINE 1: Select * custom.tipo_item_newsletter 
+                 ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[07-Jan-2015 17:53:53 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column &quot;titulo&quot; does not exist
+LINE 1: update custom.tipo_item_newsletter set codigo = titulo where...
+                                                        ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[12-Jan-2015 17:11:02 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near &quot;GRANT&quot;
+LINE 24: GRANT ALL PRIVILEGES ON custom.item_template_ferramenta TO &quot;...
+         ^ in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 129
+[16-Jan-2015 17:33:11 UTC] PHP Fatal error:  Call to undefined function pg_connect() in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 55
+[16-Jan-2015 17:35:48 UTC] PHP Fatal error:  Call to undefined function pg_connect() in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 55
+[16-Jan-2015 17:55:11 UTC] PHP Fatal error:  Call to undefined function pg_connect() in /home/possivel/public_html/sistema/persist/PostGreSQLConnection.php on line 55

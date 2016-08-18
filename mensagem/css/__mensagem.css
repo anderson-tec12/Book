@@ -1,0 +1,52 @@
+body {
+	background: url(../images/background.jpg) top center repeat;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 90px 0;
+}
+#campo {
+	max-width: 995px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+}
+#campo h1 {
+	font-size: 26px;
+	color: #9FCB8A;
+	font-weight: 300;
+	margin: 30px 0 0 0;
+}
+#campo h2 {
+	font-size: 18px;
+	color: #777777;
+	font-weight: 300;
+	margin: 5px 0 0 0;
+}
+.logo_mensagem {
+	width: 260px;
+	height: 120px;
+}
+.bt_portal {
+	width: 140px;
+	margin: 0px auto;
+	font-size: 14px;
+	padding: 10px 0;
+	margin-top: 25px;
+}
+
+.input_text {
+	width: 300px;
+	height: auto;
+	background: #EEEEEE;
+	border: none;
+	font-size: 16px;
+	color: #AAAAAA;
+	padding: 8px 12px;
+	margin: 3px 0;
+}
+.input_text input[placeholder], [placeholder], *[placeholder] {
+   color: #555555 !important;
+}

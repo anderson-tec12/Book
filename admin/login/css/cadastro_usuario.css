@@ -1,0 +1,161 @@
+body {
+	background: #FFF;
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+	color: #3D9E9D;
+}
+a:hover {
+	text-decoration: none;
+	color: #999999;
+}
+#tabela {
+	background: #FFF;
+	text-align: center;
+	padding: 0 10px;
+	width: 320px;
+	height: auto;
+	margin: -15px auto 0px auto !important;
+	display: inline-block;
+}
+
+#div_login_botoes_grande {
+	margin: 0px auto;
+	font-weight: 400;
+}
+
+.login_botao_facebook, .login_botao_google, .login_botao_microsoft, .login_botao_email {
+	width: 100%;
+	height: auto;
+	line-height: 48px;
+	padding: 0 0 0 65px;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	color: #FFF;
+	background: #9FCB8A;
+	text-transform: uppercase;
+	text-align: left;
+	margin-bottom: 1px;
+}
+.login_botao_facebook {
+	background: #4862A3 url(../images/icon_facebook.jpg) top left no-repeat;
+}
+.login_botao_facebook:hover {
+	background: #334A8B url(../images/icon_facebook.jpg) top left no-repeat;
+}
+
+.login_botao_google {
+	background: #DA4735 url(../images/icon_google.jpg) top left no-repeat;
+}
+.login_botao_google:hover {
+	background: #CD3324 url(../images/icon_google.jpg) top left no-repeat;
+}
+
+.login_botao_microsoft {
+	background: #F57F20 url(../images/icon_hotmail.jpg) top left no-repeat;
+}
+.login_botao_microsoft:hover {
+	background: #F16515 url(../images/icon_hotmail.jpg) top left no-repeat;
+}
+
+.login_botao_email {
+	background: #9FCB8A url(../images/icon_email.jpg) top left no-repeat;
+}
+.login_botao_email:hover {
+	background: #86BB71 url(../images/icon_email.jpg) top left no-repeat;
+}
+
+.txt {
+	font-size: 18px;
+	font-weight: 400;
+	color: #AAAAAA;
+	line-height: 40px;
+}
+.login_termo_uso, .login_rodape {
+	font-size: 14px;
+	color: #999999;
+	padding: 0 20px;
+}
+
+.linha {
+	width: 100%;
+	height: 1px;
+	background-color: #E5E5E5;
+	margin: 0 auto;
+}
+
+.login_box_cadastro_titulo {
+	font-size: 16px;
+	font-weight: 400;
+	color: #AAAAAA;
+	line-height: 35px;
+	text-align: left;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+
+#div_login_campos_cadastro table {
+	margin: 12px 0 0 0;
+}
+#div_login_campos_cadastro .input_text,
+#div_login_logon .input_text {
+	width: 300px;
+	height: auto;
+	background: #EEEEEE;
+	border: none;
+	font-size: 16px;
+	color: #AAAAAA;
+	padding: 12px;
+	margin: 0 0 2px -2px;
+}
+
+#div_login_logon .input_text {
+	font-size: 17px;
+	padding: 15px 15px;
+}
+
+#div_login_campos_cadastro .button {
+	width: 100%;
+	margin: 12px 0 0 -2px;
+}
+#div_login_logon .button {
+	width: 100%;
+	margin: 20px 0 10px -2px;
+	padding: 15px 15px;
+}
+
+#div_login_logon .txt {
+	margin: -16px 0 0px 0;
+}
+
+.lembrar_senha {
+	float: left;
+	padding: 0;
+	margin: 5px 0 0 0;
+	font-size: 15px;
+	color: #999999;
+}
+.esqueceu_senha {
+	float: right;
+	font-size: 15px;
+	margin: 5px 0 0 0;
+}
+#div_login_campos_cadastro .button, #div_login_logon .button {
+	background: #5AB8B7;
+}
+#div_login_campos_cadastro .button, #div_login_logon .button:hover {
+	background: #3D9E9D;
+}
+
+
+
+/*****************************************************/
+.login_botao_facebook, .login_botao_google, .login_botao_microsoft, .login_botao_email {
+    -moz-transition: background-color 0.40s ease-in-out;
+    -webkit-transition: background-color 0.40s ease-in-out;
+    -o-transition: background-color 0.40s ease-in-out;
+    -ms-transition: background-color 0.40s ease-in-out;
+    transition: background-color 0.40s ease-in-out;
+}

@@ -1,0 +1,18 @@
+177.135.211.220
+sistemas@ufcengenharia.com.br
+ufcsistemas
+sistemas@ufcengenharia.com.br
+sistemas@ufcengenharia.com.br
+Teste de email em minha máquina
+rafaelrend@gmail.com
+587
+true
+
+#host, usuario, senha, emailenvio, emailremetente, titulo do email, destinatário, porta, SSL
+
+#const host_name = 'mail.ufcengenharia.com.br'; //'10.0.0.13';
+#	const host_port = 25;
+#	const ssl = 0;
+#	const start_tls = 0;                 
+#	const user = 'sistemas@ufcengenharia.com.br"';
+#	const password = 'ufcsistemas';

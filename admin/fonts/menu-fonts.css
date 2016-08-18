@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('menu_fonts/icomoon.eot?fcc5ts');
+	src:url('menu_fonts/icomoon.eot?#iefixfcc5ts') format('embedded-opentype'),
+		url('menu_fonts/icomoon.ttf?fcc5ts') format('truetype'),
+		url('menu_fonts/icomoon.woff?fcc5ts') format('woff'),
+		url('menu_fonts/icomoon.svg?fcc5ts#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-noun_43332_cc:before {
+	content: "\e614";
+}
+.icon-cadastre:before {
+	content: "\e600";
+}
+.icon-key:before {
+	content: "\e601";
+}
+.icon-dochotomous:before {
+	content: "\e602";
+}
+.icon-icons_mnu:before {
+	content: "\e603";
+}
+.icon-group_answers:before {
+	content: "\e604";
+}
+.icon-ticket:before {
+	content: "\e605";
+}
+.icon-tickets:before {
+	content: "\e606";
+}
+.icon-template_element:before {
+	content: "\e607";
+}
+.icon-actions:before {
+	content: "\e608";
+}
+.icon-fallacies:before {
+	content: "\e609";
+}
+.icon-configurations:before {
+	content: "\e60a";
+}
+.icon-templates:before {
+	content: "\e60b";
+}
+.icon-email_template:before {
+	content: "\e60c";
+}
+.icon-email_element_template:before {
+	content: "\e60d";
+}
+.icon-icon_tools:before {
+	content: "\e60e";
+}
+.icon-users:before {
+	content: "\e60f";
+}
+.icon-professionals:before {
+	content: "\e610";
+}
+.icon-tools_template:before {
+	content: "\e611";
+}
+.icon-abcd_template:before {
+	content: "\e612";
+}
+.icon-images:before {
+	content: "\e613";
+}
+.icon-elements:before {
+	content: "\e615";
+}
+.icon-desk_lamp:before {
+	content: "\e616";
+}
+.icon-team:before {
+	content: "\e617";
+}
+.icon-keyword:before {
+	content: "\e618";
+}
+.icon-thinking:before {
+	content: "\e61e";
+}
+.icon-first_aid_kit:before {
+	content: "\e619";
+}

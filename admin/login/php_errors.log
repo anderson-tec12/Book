@@ -1,0 +1,57 @@
+[05-Aug-2014 14:24:56] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=1601829166710207&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_face.php&client_secret=6ee73becc91e2978a5bd4082c7865236&code=AQBkYHgyjNTa4zxrT6x_CyZOkyqkK1yu3GwYr04adFzUFDobdV3L6QN_jVbtNk7agmkkGCXkH41ZsIwiYJBOfdCRsVnwTOeCw1gcorrUqftrgAReJU3-qRVA-JmR72tJGM3qqWAKnL3pY5-GQV_ZIAYn6vl1zNh57qKthXz3GalpBcHygUwsUtJN3ZUP0mk8KHhRF8ttrs7Djy43G5stHCVYSe9vnnje7Y7L5bloQSVPsfmIeVd5BoeoY109COtMx6if88A4jsn4uP8JAtad1kfWyt8YiprLjo3OVTSdhfH6zAcW23wsvHI76xJ-Nu1yBg8q7yLnh0FFiDqsoSu-i02W): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 25
+[05-Aug-2014 14:28:34] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=1601829166710207&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_face.php&client_secret=6ee73becc91e2978a5bd4082c7865236&code=AQALgH44G7leP1StaF2vQpaiOHpzVfNFftRV8SCdtZrSN7CUyCwtPz_T7e3Zxy4iPmxIPX2rjRpKBsoOW_KfrulpE-vs_LTlL3y-KPbWOvOQZy1MCiQ4UE_eHaFEYhKgV2VBgzlIwut9IFjMjnVw-iGL2JUSbhtRanp4r1ARrEU1ZZllcKRp5LYRhfcQpzPIRknDGvu3nN6PZMNAgN1Khrilu4usiLCUFMJveLMWprI1bYUsHIe9BO_dhHfK7mrHcCY0ZNxRi8Mdt266wLSo5XwnLmsLWnF4uRkGcKjwguxcdVclmDJ-se6sqy8yCHjkHRhLtIugS7Mj7elOHbyc6BcM): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 37
+[05-Aug-2014 14:28:35] PHP Warning:  file_get_contents(https://graph.facebook.com/me?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 24
+[05-Aug-2014 14:45:42] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in C:\home\rendti.com.br\www\logins_teste\config.php on line 21
+[05-Aug-2014 14:50:10] PHP Parse error:  syntax error, unexpected '<' in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 4
+[05-Aug-2014 15:17:39] PHP Warning:  file_get_contents(https://www.googleapis.com/oauth2/v1/userinfo?access_token=4/r7tulMj4cD7jfZ1ef7LkEPkOQXX6.0uU9TRo6UY8VsjMf6whcw_434cZOjwI): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 22
+[05-Aug-2014 15:18:34] PHP Warning:  file_get_contents(https://www.googleapis.com/oauth2/v1/userinfo?access_token=4/ugIfUUA5IwaxZ4dmz2iPcE8g_lnK.wrecJg9viB0asjMf6whcw_4pkM5OjwI): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 22
+[05-Aug-2014 15:24:23] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token?client_id=726481506776-dd3073embadleplbvlgt603j1j88ejtr.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_google.php&client_secret=6ZFW8aqKOUYAkYOdkp9NLode&code=4/ugIfUUA5IwaxZ4dmz2iPcE8g_lnK.wrecJg9viB0asjMf6whcw_4pkM5OjwI&grant_type=authorization_code): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 40
+[05-Aug-2014 15:25:24] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token?client_id=726481506776-dd3073embadleplbvlgt603j1j88ejtr.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_google.php&client_secret=6ZFW8aqKOUYAkYOdkp9NLode&code=4/Z0lYttDi7lcAQIknTuj8AOZDHyf9.wgDcWBV1HjAQsjMf6whcw_4HEdtOjwI&grant_type=authorization_code): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 40
+[05-Aug-2014 15:29:33] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token?client_id=726481506776-dd3073embadleplbvlgt603j1j88ejtr.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_google.php&client_secret=6ZFW8aqKOUYAkYOdkp9NLode&grant_type=authorization_code&code=4/Z0lYttDi7lcAQIknTuj8AOZDHyf9.wgDcWBV1HjAQsjMf6whcw_4HEdtOjwI): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 41
+[05-Aug-2014 15:30:01] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token?client_id=726481506776-dd3073embadleplbvlgt603j1j88ejtr.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_google.php&client_secret=6ZFW8aqKOUYAkYOdkp9NLode&grant_type=authorization_code&code=4/JvQxxsYmtT0TvSjGq4Ykrm1bsKaV.wrQ1DQatnDERsjMf6whcw_4Bh-NOjwI): failed to open stream: HTTP request failed! HTTP/1.0 405 Method Not Allowed
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 41
+[05-Aug-2014 15:36:32] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token?): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 76
+[05-Aug-2014 15:44:40] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=1601829166710207&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_face.php&client_secret=6ee73becc91e2978a5bd4082c7865236&code=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 37
+[05-Aug-2014 15:44:41] PHP Warning:  file_get_contents(https://graph.facebook.com/me?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 24
+[05-Aug-2014 15:45:16] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=1601829166710207&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_face.php&client_secret=6ee73becc91e2978a5bd4082c7865236&code=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 37
+[05-Aug-2014 15:45:17] PHP Warning:  file_get_contents(https://graph.facebook.com/me?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 24
+[05-Aug-2014 15:46:20] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=1601829166710207&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_face.php&client_secret=6ee73becc91e2978a5bd4082c7865236&code=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 37
+[05-Aug-2014 15:46:21] PHP Warning:  file_get_contents(https://graph.facebook.com/me?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 24
+[05-Aug-2014 15:46:38] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=1601829166710207&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_face.php&client_secret=6ee73becc91e2978a5bd4082c7865236&code=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 37
+[05-Aug-2014 15:46:39] PHP Warning:  file_get_contents(https://graph.facebook.com/me?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 24
+[05-Aug-2014 15:46:54] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=1601829166710207&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_face.php&client_secret=6ee73becc91e2978a5bd4082c7865236&code=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 37
+[05-Aug-2014 15:46:55] PHP Warning:  file_get_contents(https://graph.facebook.com/me?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 24
+[05-Aug-2014 15:47:23] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token?): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 76
+[05-Aug-2014 15:48:40] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token?): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 76
+[05-Aug-2014 15:59:42] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token?): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 76
+[05-Aug-2014 16:00:29] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 76
+[05-Aug-2014 16:03:06] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=1601829166710207&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_face.php&client_secret=6ee73becc91e2978a5bd4082c7865236&code=AQAOs_hp5_Wy-iDTCbo7lxiEZLWz63L_FYBb6-4AOh-cq15ZTmxAxdU6fqSv3UMpsFjtEhyhqfskzQuuAehuqpubpBTNR3FSgvkD9Gn15wX5nFNT5Fr2qbaS6Ok2fvlL0rblOjf7plyTqJ6l108xg-X59qNvZj1h4mUAC4aaV20DRvmkx-GHoZ-vP2p51Hz5SQiLQCEhgD9miQWIFMsfeJNMNmo_7t9LwRanvW7gOBBWs7-azr5CLCSEg1oX3xjLJbQX7M1trEv7HrXVZSesXqzBwQxxoyno_KZLs6UCmGa-b5RDJSL9HEjRsQt4nThk0QEnPIF55BjmUMrIMVZXUTVL): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 37
+[05-Aug-2014 16:03:07] PHP Warning:  file_get_contents(https://graph.facebook.com/me?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_face.php on line 24
+[05-Aug-2014 16:03:23] PHP Parse error:  syntax error, unexpected ';' in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 53
+[05-Aug-2014 16:03:42] PHP Warning:  file_get_contents(https://accounts.google.com/o/oauth2/token?client_id=726481506776-dd3073embadleplbvlgt603j1j88ejtr.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Frendti.com.br%2Flogins_teste%2Fretorno_google.php&client_secret=6ZFW8aqKOUYAkYOdkp9NLode&grant_type=authorization_code&code=4/_btFd8GzIZZGk8PLpSGlju86Nqoz.glwcwsoAeB0UsjMf6whcw_6loyBPjwI): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in C:\home\rendti.com.br\www\logins_teste\retorno_google.php on line 77

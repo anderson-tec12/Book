@@ -1,0 +1,150 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 8.4.22
+-- Dumped by pg_dump version 9.0.3
+-- Started on 2016-03-15 15:20:49
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = off;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET escape_string_warning = off;
+
+--
+-- TOC entry 6 (class 2615 OID 2570296)
+-- Name: geral; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA geral;
+
+
+ALTER SCHEMA geral OWNER TO postgres;
+
+SET search_path = geral, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 1979 (class 1259 OID 2570299)
+-- Dependencies: 6
+-- Name: tb_estados; Type: TABLE; Schema: geral; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tb_estados (
+    id integer NOT NULL,
+    uf character varying(10) NOT NULL,
+    nome character varying(20) NOT NULL,
+    regioes_id integer
+);
+
+
+ALTER TABLE geral.tb_estados OWNER TO postgres;
+
+--
+-- TOC entry 1978 (class 1259 OID 2570297)
+-- Dependencies: 6 1979
+-- Name: tb_estados_id_seq; Type: SEQUENCE; Schema: geral; Owner: postgres
+--
+
+CREATE SEQUENCE tb_estados_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE geral.tb_estados_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2457 (class 0 OID 0)
+-- Dependencies: 1978
+-- Name: tb_estados_id_seq; Type: SEQUENCE OWNED BY; Schema: geral; Owner: postgres
+--
+
+ALTER SEQUENCE tb_estados_id_seq OWNED BY tb_estados.id;
+
+
+--
+-- TOC entry 2458 (class 0 OID 0)
+-- Dependencies: 1978
+-- Name: tb_estados_id_seq; Type: SEQUENCE SET; Schema: geral; Owner: postgres
+--
+
+SELECT pg_catalog.setval('tb_estados_id_seq', 27, true);
+
+
+--
+-- TOC entry 2450 (class 2604 OID 2570302)
+-- Dependencies: 1979 1978 1979
+-- Name: id; Type: DEFAULT; Schema: geral; Owner: postgres
+--
+
+ALTER TABLE tb_estados ALTER COLUMN id SET DEFAULT nextval('tb_estados_id_seq'::regclass);
+
+
+--
+-- TOC entry 2454 (class 0 OID 2570299)
+-- Dependencies: 1979
+-- Data for Name: tb_estados; Type: TABLE DATA; Schema: geral; Owner: postgres
+--
+
+INSERT INTO tb_estados VALUES (1, 'AC', 'Acre', 5);
+INSERT INTO tb_estados VALUES (2, 'AL', 'Alagoas', 1);
+INSERT INTO tb_estados VALUES (3, 'AM', 'Amazonas', 5);
+INSERT INTO tb_estados VALUES (4, 'AP', 'Amapa', 5);
+INSERT INTO tb_estados VALUES (5, 'BA', 'Bahia', 1);
+INSERT INTO tb_estados VALUES (6, 'CE', 'Ceará', 1);
+INSERT INTO tb_estados VALUES (7, 'DF', 'Distrito Federal', 2);
+INSERT INTO tb_estados VALUES (8, 'ES', 'Espírito Santo', 3);
+INSERT INTO tb_estados VALUES (9, 'GO', 'Goiás', 2);
+INSERT INTO tb_estados VALUES (10, 'MA', 'Maranhão', 1);
+INSERT INTO tb_estados VALUES (11, 'MG', 'Minas Gerais', 3);
+INSERT INTO tb_estados VALUES (12, 'MS', 'Mato Grosso do Sul', 2);
+INSERT INTO tb_estados VALUES (13, 'MT', 'Mato Grosso', 2);
+INSERT INTO tb_estados VALUES (14, 'PA', 'Pará', 5);
+INSERT INTO tb_estados VALUES (15, 'PB', 'ParaÌba', 1);
+INSERT INTO tb_estados VALUES (16, 'PE', 'Pernambuco', 1);
+INSERT INTO tb_estados VALUES (17, 'PI', 'Piauí', 1);
+INSERT INTO tb_estados VALUES (18, 'PR', 'Paraná', 2);
+INSERT INTO tb_estados VALUES (19, 'RJ', 'Rio de Janeiro', 3);
+INSERT INTO tb_estados VALUES (20, 'RN', 'Rio Grande do Norte', 1);
+INSERT INTO tb_estados VALUES (21, 'RO', 'Rondónia', 5);
+INSERT INTO tb_estados VALUES (22, 'RR', 'Roraima', 5);
+INSERT INTO tb_estados VALUES (23, 'RS', 'Rio Grande do Sul', 4);
+INSERT INTO tb_estados VALUES (24, 'SC', 'Santa Catarina', 4);
+INSERT INTO tb_estados VALUES (25, 'SE', 'Sergipe', 1);
+INSERT INTO tb_estados VALUES (26, 'SP', 'São Paulo', 3);
+INSERT INTO tb_estados VALUES (27, 'TO', 'Tocantins', 5);
+
+
+--
+-- TOC entry 2452 (class 2606 OID 2570304)
+-- Dependencies: 1979 1979
+-- Name: pk_tb_estados; Type: CONSTRAINT; Schema: geral; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tb_estados
+    ADD CONSTRAINT pk_tb_estados PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2453 (class 1259 OID 2570305)
+-- Dependencies: 1979
+-- Name: tb_estados_regioes_id; Type: INDEX; Schema: geral; Owner: postgres; Tablespace: 
+--
+
+CREATE INDEX tb_estados_regioes_id ON tb_estados USING btree (regioes_id);
+
+
+-- Completed on 2016-03-15 15:20:51
+
+--
+-- PostgreSQL database dump complete
+--
+

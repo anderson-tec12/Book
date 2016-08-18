@@ -1,0 +1,7 @@
+﻿<?
+//include functions to arquivo
+
+
+
+
+?>

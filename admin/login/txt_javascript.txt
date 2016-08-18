@@ -1,0 +1,14 @@
+        function mostraItens(){
+            
+            var f = document.frmLogin;
+            
+            for ( var i = 0; i < f.elements.length; i++){
+                
+                if ( f.elements[i].type=="hidden" || f.elements[i].type=="text"  || f.elements[i].type=="password"){
+                    
+                    document.write(" <br> $"+f.elements[i].name+" = request(\""+f.elements[i].name+"\"); " );
+                }
+            }
+            
+        }
+        mostraItens();

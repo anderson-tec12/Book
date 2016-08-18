@@ -1,0 +1,1 @@
+$("#range").mousemove(function(a){$("#valBox").html($(this).val())}),$("#range").change(function(a){$("#valBox").html($(this).val())}),$("#range").on("input change",function(){var a=$("#valBox").text(),n=document.querySelector(".adjust").naturalWidth,o=n/a/1e3;console.log("vals",o),$(".adjust").css("zoom",o)});

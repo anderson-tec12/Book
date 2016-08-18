@@ -1,0 +1,825 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 8.4.22
+-- Dumped by pg_dump version 9.0.3
+-- Started on 2016-05-27 01:14:53
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = off;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET escape_string_warning = off;
+
+--
+-- TOC entry 8 (class 2615 OID 2654373)
+-- Name: custom; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA custom;
+
+
+ALTER SCHEMA custom OWNER TO postgres;
+
+SET search_path = custom, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 2019 (class 1259 OID 2712020)
+-- Dependencies: 8
+-- Name: componente_template; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE componente_template (
+    id integer NOT NULL,
+    nome character varying(300),
+    descricao text,
+    instrucoes_uso text,
+    modulos character varying(300),
+    id_icone1 integer,
+    id_icone2 integer,
+    cor character varying(8),
+    tx_modulos character varying(300),
+    status character varying(30),
+    ordem smallint,
+    id_ferramenta integer,
+    grupo character varying(50),
+    id_modulo integer,
+    tipo character varying(40),
+    id_grupo integer
+);
+
+
+ALTER TABLE custom.componente_template OWNER TO postgres;
+
+--
+-- TOC entry 2020 (class 1259 OID 2712026)
+-- Dependencies: 8 2019
+-- Name: componente_template_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE componente_template_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.componente_template_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2498 (class 0 OID 0)
+-- Dependencies: 2020
+-- Name: componente_template_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE componente_template_id_seq OWNED BY componente_template.id;
+
+
+--
+-- TOC entry 2021 (class 1259 OID 2712028)
+-- Dependencies: 8
+-- Name: componente_template_item; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE componente_template_item (
+    id integer NOT NULL,
+    id_item_componente integer,
+    id_componente_template integer,
+    ordem smallint,
+    texto text,
+    status character varying(30),
+    titulo character varying(300)
+);
+
+
+ALTER TABLE custom.componente_template_item OWNER TO postgres;
+
+--
+-- TOC entry 2022 (class 1259 OID 2712034)
+-- Dependencies: 2021 8
+-- Name: componente_template_item_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE componente_template_item_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.componente_template_item_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2500 (class 0 OID 0)
+-- Dependencies: 2022
+-- Name: componente_template_item_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE componente_template_item_id_seq OWNED BY componente_template_item.id;
+
+
+--
+-- TOC entry 2110 (class 1259 OID 2811055)
+-- Dependencies: 8
+-- Name: grupo_componente_template; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE grupo_componente_template (
+    id integer NOT NULL,
+    id_ferramenta integer,
+    id_modulo integer,
+    codigo character varying(50),
+    nome character varying(255),
+    descricao character varying(255)
+);
+
+
+ALTER TABLE custom.grupo_componente_template OWNER TO postgres;
+
+--
+-- TOC entry 2111 (class 1259 OID 2811061)
+-- Dependencies: 8 2110
+-- Name: grupo_componente_template_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE grupo_componente_template_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.grupo_componente_template_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2501 (class 0 OID 0)
+-- Dependencies: 2111
+-- Name: grupo_componente_template_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE grupo_componente_template_id_seq OWNED BY grupo_componente_template.id;
+
+
+--
+-- TOC entry 2023 (class 1259 OID 2712036)
+-- Dependencies: 8
+-- Name: item_componente; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE item_componente (
+    id integer NOT NULL,
+    codigo character varying(30),
+    nome character varying(300),
+    imagem character varying(300),
+    imagem_miniatura character varying(300),
+    obs text,
+    status character varying(30)
+);
+
+
+ALTER TABLE custom.item_componente OWNER TO postgres;
+
+--
+-- TOC entry 2024 (class 1259 OID 2712042)
+-- Dependencies: 2023 8
+-- Name: item_componente_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE item_componente_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.item_componente_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2503 (class 0 OID 0)
+-- Dependencies: 2024
+-- Name: item_componente_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE item_componente_id_seq OWNED BY item_componente.id;
+
+
+--
+-- TOC entry 2025 (class 1259 OID 2712044)
+-- Dependencies: 8
+-- Name: item_template_ferramenta; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE item_template_ferramenta (
+    id integer NOT NULL,
+    ordem smallint,
+    tipo character varying(150),
+    valor text,
+    id_template_ferramenta integer
+);
+
+
+ALTER TABLE custom.item_template_ferramenta OWNER TO postgres;
+
+--
+-- TOC entry 2026 (class 1259 OID 2712050)
+-- Dependencies: 8 2025
+-- Name: item_template_ferramenta_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE item_template_ferramenta_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.item_template_ferramenta_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2504 (class 0 OID 0)
+-- Dependencies: 2026
+-- Name: item_template_ferramenta_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE item_template_ferramenta_id_seq OWNED BY item_template_ferramenta.id;
+
+
+--
+-- TOC entry 2027 (class 1259 OID 2712052)
+-- Dependencies: 8
+-- Name: item_template_newsletter; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE item_template_newsletter (
+    id integer NOT NULL,
+    ordem smallint,
+    id_tipo_item_newsletter integer,
+    id_template_newsletter integer,
+    valor text
+);
+
+
+ALTER TABLE custom.item_template_newsletter OWNER TO postgres;
+
+--
+-- TOC entry 2028 (class 1259 OID 2712058)
+-- Dependencies: 2027 8
+-- Name: item_template_newsletter_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE item_template_newsletter_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.item_template_newsletter_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2506 (class 0 OID 0)
+-- Dependencies: 2028
+-- Name: item_template_newsletter_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE item_template_newsletter_id_seq OWNED BY item_template_newsletter.id;
+
+
+--
+-- TOC entry 2029 (class 1259 OID 2712060)
+-- Dependencies: 8
+-- Name: template_ferramenta; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE template_ferramenta (
+    id integer NOT NULL,
+    id_ferramenta integer,
+    tipo character varying(150),
+    obs text,
+    id_modulo integer
+);
+
+
+ALTER TABLE custom.template_ferramenta OWNER TO postgres;
+
+--
+-- TOC entry 2030 (class 1259 OID 2712066)
+-- Dependencies: 8 2029
+-- Name: template_ferramenta_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE template_ferramenta_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.template_ferramenta_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2507 (class 0 OID 0)
+-- Dependencies: 2030
+-- Name: template_ferramenta_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE template_ferramenta_id_seq OWNED BY template_ferramenta.id;
+
+
+--
+-- TOC entry 2031 (class 1259 OID 2712068)
+-- Dependencies: 8
+-- Name: template_newsletter; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE template_newsletter (
+    id integer NOT NULL,
+    nome character varying(300),
+    descricao text,
+    obs text,
+    tipo character varying(30),
+    id_ferramenta integer,
+    id_modulo integer
+);
+
+
+ALTER TABLE custom.template_newsletter OWNER TO postgres;
+
+--
+-- TOC entry 2032 (class 1259 OID 2712074)
+-- Dependencies: 2031 8
+-- Name: template_newsletter_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE template_newsletter_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.template_newsletter_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2509 (class 0 OID 0)
+-- Dependencies: 2032
+-- Name: template_newsletter_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE template_newsletter_id_seq OWNED BY template_newsletter.id;
+
+
+--
+-- TOC entry 2033 (class 1259 OID 2712076)
+-- Dependencies: 8
+-- Name: tipo_item_newsletter; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tipo_item_newsletter (
+    id integer NOT NULL,
+    codigo character varying(30),
+    nome character varying(300),
+    imagem character varying(300),
+    obs text
+);
+
+
+ALTER TABLE custom.tipo_item_newsletter OWNER TO postgres;
+
+--
+-- TOC entry 2034 (class 1259 OID 2712082)
+-- Dependencies: 8 2033
+-- Name: tipo_item_newsletter_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE tipo_item_newsletter_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.tipo_item_newsletter_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2511 (class 0 OID 0)
+-- Dependencies: 2034
+-- Name: tipo_item_newsletter_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE tipo_item_newsletter_id_seq OWNED BY tipo_item_newsletter.id;
+
+
+--
+-- TOC entry 2016 (class 1259 OID 2687285)
+-- Dependencies: 8
+-- Name: valor_item_template_newsletter; Type: TABLE; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE valor_item_template_newsletter (
+    id integer NOT NULL,
+    chave character varying(300),
+    valor text,
+    id_item_template_newsletter integer
+);
+
+
+ALTER TABLE custom.valor_item_template_newsletter OWNER TO postgres;
+
+--
+-- TOC entry 2015 (class 1259 OID 2687283)
+-- Dependencies: 8 2016
+-- Name: valor_item_template_newsletter_id_seq; Type: SEQUENCE; Schema: custom; Owner: postgres
+--
+
+CREATE SEQUENCE valor_item_template_newsletter_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE custom.valor_item_template_newsletter_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2512 (class 0 OID 0)
+-- Dependencies: 2015
+-- Name: valor_item_template_newsletter_id_seq; Type: SEQUENCE OWNED BY; Schema: custom; Owner: postgres
+--
+
+ALTER SEQUENCE valor_item_template_newsletter_id_seq OWNED BY valor_item_template_newsletter.id;
+
+
+--
+-- TOC entry 2456 (class 2604 OID 2712084)
+-- Dependencies: 2020 2019
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE componente_template ALTER COLUMN id SET DEFAULT nextval('componente_template_id_seq'::regclass);
+
+
+--
+-- TOC entry 2457 (class 2604 OID 2712085)
+-- Dependencies: 2022 2021
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE componente_template_item ALTER COLUMN id SET DEFAULT nextval('componente_template_item_id_seq'::regclass);
+
+
+--
+-- TOC entry 2464 (class 2604 OID 2811063)
+-- Dependencies: 2111 2110
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE grupo_componente_template ALTER COLUMN id SET DEFAULT nextval('grupo_componente_template_id_seq'::regclass);
+
+
+--
+-- TOC entry 2458 (class 2604 OID 2712086)
+-- Dependencies: 2024 2023
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE item_componente ALTER COLUMN id SET DEFAULT nextval('item_componente_id_seq'::regclass);
+
+
+--
+-- TOC entry 2459 (class 2604 OID 2712087)
+-- Dependencies: 2026 2025
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE item_template_ferramenta ALTER COLUMN id SET DEFAULT nextval('item_template_ferramenta_id_seq'::regclass);
+
+
+--
+-- TOC entry 2460 (class 2604 OID 2712088)
+-- Dependencies: 2028 2027
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE item_template_newsletter ALTER COLUMN id SET DEFAULT nextval('item_template_newsletter_id_seq'::regclass);
+
+
+--
+-- TOC entry 2461 (class 2604 OID 2712089)
+-- Dependencies: 2030 2029
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE template_ferramenta ALTER COLUMN id SET DEFAULT nextval('template_ferramenta_id_seq'::regclass);
+
+
+--
+-- TOC entry 2462 (class 2604 OID 2712090)
+-- Dependencies: 2032 2031
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE template_newsletter ALTER COLUMN id SET DEFAULT nextval('template_newsletter_id_seq'::regclass);
+
+
+--
+-- TOC entry 2463 (class 2604 OID 2712091)
+-- Dependencies: 2034 2033
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE tipo_item_newsletter ALTER COLUMN id SET DEFAULT nextval('tipo_item_newsletter_id_seq'::regclass);
+
+
+--
+-- TOC entry 2455 (class 2604 OID 2687288)
+-- Dependencies: 2016 2015 2016
+-- Name: id; Type: DEFAULT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE valor_item_template_newsletter ALTER COLUMN id SET DEFAULT nextval('valor_item_template_newsletter_id_seq'::regclass);
+
+
+--
+-- TOC entry 2478 (class 2606 OID 2712093)
+-- Dependencies: 2027 2027
+-- Name: item_template_newsletter_pkey; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY item_template_newsletter
+    ADD CONSTRAINT item_template_newsletter_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2469 (class 2606 OID 2712095)
+-- Dependencies: 2019 2019
+-- Name: pk_componente_template; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY componente_template
+    ADD CONSTRAINT pk_componente_template PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2472 (class 2606 OID 2712097)
+-- Dependencies: 2021 2021
+-- Name: pk_componente_template_item; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY componente_template_item
+    ADD CONSTRAINT pk_componente_template_item PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2488 (class 2606 OID 2811065)
+-- Dependencies: 2110 2110
+-- Name: pk_grupo_componente_template; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY grupo_componente_template
+    ADD CONSTRAINT pk_grupo_componente_template PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2476 (class 2606 OID 2712099)
+-- Dependencies: 2025 2025
+-- Name: pk_itens_template_ferramenta; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY item_template_ferramenta
+    ADD CONSTRAINT pk_itens_template_ferramenta PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2474 (class 2606 OID 2712101)
+-- Dependencies: 2023 2023
+-- Name: pk_sitem_componente; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY item_componente
+    ADD CONSTRAINT pk_sitem_componente PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2482 (class 2606 OID 2712103)
+-- Dependencies: 2029 2029
+-- Name: template_ferramenta_pkey; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY template_ferramenta
+    ADD CONSTRAINT template_ferramenta_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2484 (class 2606 OID 2712105)
+-- Dependencies: 2031 2031
+-- Name: template_newsletter_pkey; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY template_newsletter
+    ADD CONSTRAINT template_newsletter_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2486 (class 2606 OID 2712107)
+-- Dependencies: 2033 2033
+-- Name: tipo_item_newsletter_pkey; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tipo_item_newsletter
+    ADD CONSTRAINT tipo_item_newsletter_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2466 (class 2606 OID 2687293)
+-- Dependencies: 2016 2016
+-- Name: valor_item_template_newsletter_pkey; Type: CONSTRAINT; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY valor_item_template_newsletter
+    ADD CONSTRAINT valor_item_template_newsletter_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2470 (class 1259 OID 2810896)
+-- Dependencies: 2021
+-- Name: componente_template_item_ix_id_componente_template; Type: INDEX; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE INDEX componente_template_item_ix_id_componente_template ON componente_template_item USING btree (id_componente_template);
+
+
+--
+-- TOC entry 2467 (class 1259 OID 2810897)
+-- Dependencies: 2019
+-- Name: componente_template_ix_id_modulo; Type: INDEX; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE INDEX componente_template_ix_id_modulo ON componente_template USING btree (id_modulo);
+
+
+--
+-- TOC entry 2479 (class 1259 OID 2810895)
+-- Dependencies: 2029
+-- Name: template_ferramenta_ix_id_ferramenta; Type: INDEX; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE INDEX template_ferramenta_ix_id_ferramenta ON template_ferramenta USING btree (id_ferramenta);
+
+
+--
+-- TOC entry 2480 (class 1259 OID 2810894)
+-- Dependencies: 2029
+-- Name: template_ferramenta_ix_id_modulo; Type: INDEX; Schema: custom; Owner: postgres; Tablespace: 
+--
+
+CREATE INDEX template_ferramenta_ix_id_modulo ON template_ferramenta USING btree (id_modulo);
+
+
+--
+-- TOC entry 2493 (class 2606 OID 2811066)
+-- Dependencies: 2106 2110
+-- Name: grupo_componente_template_id_ferramenta_fkey; Type: FK CONSTRAINT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE ONLY grupo_componente_template
+    ADD CONSTRAINT grupo_componente_template_id_ferramenta_fkey FOREIGN KEY (id_ferramenta) REFERENCES public.ferramenta(id);
+
+
+--
+-- TOC entry 2492 (class 2606 OID 2811071)
+-- Dependencies: 2110 2102
+-- Name: grupo_componente_template_id_modulo_fkey; Type: FK CONSTRAINT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE ONLY grupo_componente_template
+    ADD CONSTRAINT grupo_componente_template_id_modulo_fkey FOREIGN KEY (id_modulo) REFERENCES public.modulo(id);
+
+
+--
+-- TOC entry 2489 (class 2606 OID 2712113)
+-- Dependencies: 2025 2029 2481
+-- Name: item_template_ferramenta_id_template_ferramenta_fkey; Type: FK CONSTRAINT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE ONLY item_template_ferramenta
+    ADD CONSTRAINT item_template_ferramenta_id_template_ferramenta_fkey FOREIGN KEY (id_template_ferramenta) REFERENCES template_ferramenta(id);
+
+
+--
+-- TOC entry 2491 (class 2606 OID 2712118)
+-- Dependencies: 2031 2483 2027
+-- Name: item_template_newsletter_id_template_newsletter_fkey; Type: FK CONSTRAINT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE ONLY item_template_newsletter
+    ADD CONSTRAINT item_template_newsletter_id_template_newsletter_fkey FOREIGN KEY (id_template_newsletter) REFERENCES template_newsletter(id);
+
+
+--
+-- TOC entry 2490 (class 2606 OID 2712123)
+-- Dependencies: 2485 2033 2027
+-- Name: item_template_newsletter_id_tipo_item_newsletter_fkey; Type: FK CONSTRAINT; Schema: custom; Owner: postgres
+--
+
+ALTER TABLE ONLY item_template_newsletter
+    ADD CONSTRAINT item_template_newsletter_id_tipo_item_newsletter_fkey FOREIGN KEY (id_tipo_item_newsletter) REFERENCES tipo_item_newsletter(id);
+
+
+--
+-- TOC entry 2496 (class 0 OID 0)
+-- Dependencies: 8
+-- Name: custom; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA custom FROM PUBLIC;
+
+
+--
+-- TOC entry 2497 (class 0 OID 0)
+-- Dependencies: 2019
+-- Name: componente_template; Type: ACL; Schema: custom; Owner: postgres
+--
+
+REVOKE ALL ON TABLE componente_template FROM PUBLIC;
+REVOKE ALL ON TABLE componente_template FROM postgres;
+GRANT ALL ON TABLE componente_template TO postgres;
+
+
+--
+-- TOC entry 2499 (class 0 OID 0)
+-- Dependencies: 2021
+-- Name: componente_template_item; Type: ACL; Schema: custom; Owner: postgres
+--
+
+REVOKE ALL ON TABLE componente_template_item FROM PUBLIC;
+REVOKE ALL ON TABLE componente_template_item FROM postgres;
+GRANT ALL ON TABLE componente_template_item TO postgres;
+
+
+--
+-- TOC entry 2502 (class 0 OID 0)
+-- Dependencies: 2023
+-- Name: item_componente; Type: ACL; Schema: custom; Owner: postgres
+--
+
+REVOKE ALL ON TABLE item_componente FROM PUBLIC;
+REVOKE ALL ON TABLE item_componente FROM postgres;
+GRANT ALL ON TABLE item_componente TO postgres;
+
+
+--
+-- TOC entry 2505 (class 0 OID 0)
+-- Dependencies: 2027
+-- Name: item_template_newsletter; Type: ACL; Schema: custom; Owner: postgres
+--
+
+REVOKE ALL ON TABLE item_template_newsletter FROM PUBLIC;
+REVOKE ALL ON TABLE item_template_newsletter FROM postgres;
+GRANT ALL ON TABLE item_template_newsletter TO postgres;
+
+
+--
+-- TOC entry 2508 (class 0 OID 0)
+-- Dependencies: 2031
+-- Name: template_newsletter; Type: ACL; Schema: custom; Owner: postgres
+--
+
+REVOKE ALL ON TABLE template_newsletter FROM PUBLIC;
+REVOKE ALL ON TABLE template_newsletter FROM postgres;
+GRANT ALL ON TABLE template_newsletter TO postgres;
+
+
+--
+-- TOC entry 2510 (class 0 OID 0)
+-- Dependencies: 2033
+-- Name: tipo_item_newsletter; Type: ACL; Schema: custom; Owner: postgres
+--
+
+REVOKE ALL ON TABLE tipo_item_newsletter FROM PUBLIC;
+REVOKE ALL ON TABLE tipo_item_newsletter FROM postgres;
+GRANT ALL ON TABLE tipo_item_newsletter TO postgres;
+
+
+-- Completed on 2016-05-27 01:14:56
+
+--
+-- PostgreSQL database dump complete
+--
+

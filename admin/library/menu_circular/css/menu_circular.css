@@ -1,0 +1,222 @@
+/***** Menu Circular *****/
+#customPanelButton {
+    position: fixed;
+    height:auto;
+    width: auto;
+    overflow: hidden;
+    padding: 20px;
+    display: none;
+    top: 0px;
+    left: 0px;
+}
+#menu_circular {
+    position: fixed;
+    height:450px;
+    width: 530px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    margin-left:-225px;
+    margin-top: -265px;
+    display: none;
+    z-index:99999;
+    padding: 50px 0;
+}
+.inf {
+	position: absolute;
+	background: url(../images/fundo_ajuda.png) no-repeat;
+	width: 140px;
+	height: 140px;
+	margin: -40px 0 0 360px;
+}
+.bt_fechar_seletor {
+	position: absolute;
+	background: url(../images/fechar_seletor.png) no-repeat;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	text-indent: -9999px;
+	margin: -50px 0 0 475px;
+}
+.bt_fechar_seletor:hover {
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+#rotatescroll {
+	position: absolute;
+	/* margin: 0px auto; */
+	width: 460px;
+	height: 380px;
+}
+#rotatescroll .viewport {
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 380px;
+	height: 380px;
+	background: url(../images/fundo_botoes.png) top center no-repeat;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+#rotatescroll .overview {
+	position: absolute;
+	/*width: 798px;*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+}
+#rotatescroll .overview li {
+	width: 380px;
+	height: 380px;
+	float: left;
+	position: relative;
+}
+#rotatescroll .overlay {
+	/* background: url(images/bg-rotatescroll.png) no-repeat 0 0;*/
+	pointer-events: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 380px;
+	height: 380px;
+}
+#rotatescroll .thumb {
+	background: url(../images/bg-thumb.png) no-repeat 50% 50%;
+	position: absolute;
+	top: -3px;
+	cursor: pointer;
+	left: 137px;
+	width: 100px;
+	z-index: 200;
+	height: 100px;
+}
+#rotatescroll .dot {
+	background: url(../images/bg-dot.png) no-repeat 0 0;
+	display: none;
+	height: 14px;
+	width: 12px;
+	position: absolute;
+	left: 155px;
+	top: 4px;
+	z-index: 100;
+}
+#rotatescroll .dot span {
+	display: none;
+}
+.menu_componente_relato {
+	text-align: center;
+	margin-top: 30px;
+}
+.menu_componente_relato .nome_menu_relato {
+	font-family: 'resosemibold';
+	font-size: 22px;
+	margin: 15px 0 0 0;
+}
+.menu_componente_relato p {
+	font-family: 'resosemibold';
+	font-size: 18px;
+	color: #858585;
+	text-align: center;
+	line-height: 20px;
+	padding: 0 30px;
+	margin: 7px 0 15px 0;
+}
+.menu_componente_relato .icon_menu_relato {
+	width: 90px;
+	height: auto;
+}
+
+
+/***** Seletor 1 *****/
+#modal_menu_circular { /* fundo */
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background: #2D4E60; 
+	opacity: 0.7;
+    filter:alpha(opacity=70);
+	display: none;
+}
+.menu_componente_relato .button {
+	width: 95px;
+	margin: 0px auto;
+	float: none;
+	padding: 10px 0;
+}
+
+
+/***** Seletor 2 *****/
+.botoes_seletor {
+	margin: 0px auto;
+	text-align: center;
+	width: auto;
+	height: auto;
+	position: relative;
+	margin-top: -60px;
+	z-index: 9999;
+}
+
+.botoes_seletor .bt_concluir {
+	margin: 0px auto;
+    width: auto;
+    background: transparent;
+    text-decoration: underline;
+    text-transform: none;
+    color: #9FCB8A;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.botoes_seletor .bt_concluir:hover {
+    color: #999999;
+}
+
+/** Checkbox customizado **/
+.menu_componente_relato .checkbox {
+	background: #9FCB8A;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFF;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	padding: 8px 12px;
+	margin-top: 10px;
+}
+.menu_componente_relato .checkbox:hover {
+	background: #71B75D;
+}
+.menu_componente_relato input[type=checkbox] {
+	display:none; 
+}
+.menu_componente_relato .checkbox:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: #FFF;
+    color: #9FCB8A;
+    text-align: center;
+    /*box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.3) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.8);*/
+    margin-right: 10px;
+    -moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.menu_componente_relato input[type=checkbox]:checked + .checkbox:before {
+	content: "\2713";
+	/*text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);*/
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/********************************************************************/
